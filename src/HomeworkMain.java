@@ -3,28 +3,42 @@ import java.util.Scanner;
 
 public class HomeworkMain {
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine();
-        String [] expression= string.split(" ");
+        String[] expression = string.split(" ");
 
-        for (int i = 0; i < expression.length; i++) {
-            
-        }
         System.out.println(Arrays.toString(expression));
 
-//        String first = string.substring(0,1);
-//        System.out.println(first);
+        int index1 = string.indexOf("З");
+        int index2 = string.indexOf("в");
+        int index3 = string.indexOf("т");
+        System.out.println(index1);
+        System.out.println(index2);
+        System.out.println(index3);
 
+        String first = string.substring(0, 1);
+        String second = string.substring(4, 5);
+        String third = string.substring(6, 7);
 
+        String result = first + second + third;
 
+        char symbol1 = string.charAt(0);
+        char symbol2 = string.charAt(4);
+        char symbol3 = string.charAt(6);
 
+        int size = result.length();
+        String firstLetter = result.substring(0, 1);
+        String lastLetter = result.substring(size - 1, size);
 
-
-
+        System.out.println(symbol1);
+        System.out.println(symbol2);
+        System.out.println(symbol3);
+        System.out.println(result);
+        System.out.println(firstLetter);
+        System.out.println(lastLetter);
 
     }
 }
-
 
 
 //1. Пользователь вводит строку через консоль, разделить строку на слова, а также:
